@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/*article*/
+
+.titleSobre{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.certificationArticle{
+  
+    min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  grid-auto-rows: minmax(210px,auto);
+  
+  
+}
+
+.txtCertificationArticle{
+    grid-column: 1/2;
+    margin: 40px;
+
+}
+
+
+
+.imgsCertificationArticle {
+  margin-bottom: 30px;  
+  width: 400px;
+    max-width: 100%;
+  }
+
+.imgCertificationArticle{
+   grid-column: 2/2;
+  
+}
+
+/* Versão Moblie*/
+
+@media only screen and (max-width: 600px) {
+   
+
+ .certificationArticle{
+    grid-template-columns: 1fr;
+    text-align: center;
+  
+}
+
+
+.txtCertificationArticle{
+    display: block;
+   text-align: center;
+
+}
+
+
+
+.imgsCertificationArticle {
+    width: 250px;
+    max-width: 100%;
+  }
+
+.imgCertificationArticle{
+    grid-column: 1/2;
+  
+}
+
+
+}

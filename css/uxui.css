@@ -1,0 +1,114 @@
+.imguxmainPrincipal{
+  width: 300px;
+    height: 297.778px;
+    margin-top: 43px;
+}
+
+
+
+
+
+.titleExplore{
+    margin-top: 40px;
+     text-align: center;
+}
+
+
+.sectionCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+
+    border-radius: 20px;
+    border-top: 2px solid var(--r1, #8A4BA4);
+    border-right: 5px solid var(--r1, #8A4BA4);
+    border-bottom: 3px solid var(--r1, #8A4BA4);
+    border-left: 3px solid var(--r1, #8A4BA4);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+
+    background: var(--c1, #F9F9F9);
+}
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+.card img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px;
+
+  border-bottom: 3px solid var(--r1, #8A4BA4);
+}
+
+.cardContent {
+    
+    padding: 10px;
+}
+
+.title{
+    margin-bottom: 5px;
+}
+
+#minhaVisao {
+    display: flex;
+    margin-top: 20px;
+    align-items: center; 
+    
+
+  }
+  
+  .uxImage {
+    flex: 1;
+  }
+  
+  .uxImage img {
+    width: 400px;
+    margin-left: 200px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .uxContent {
+    text-align: center;
+    margin-right: 200px;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .conteudoUx{
+     background-color: rgba(202, 198, 198, 0.95);
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .uxSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uxImage img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .uxContent {
+        margin-right: 0;
+    }
+}

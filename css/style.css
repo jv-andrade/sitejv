@@ -1,0 +1,532 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+   margin: 0px;
+   padding: 0px;
+    background: var(--fundo, rgba(245, 245, 245, 0.95));
+}
+
+button {
+    /* Resetando todos os estilos padrão */
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+/*Tipografia*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.buttonTypography {
+    font-family: Inter;
+    text-rendering: optimizeLegibility;
+    /* Melhora a qualidade do texto */
+}
+
+h1 {
+
+    font-size: 79px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 118.5px */
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 75px */
+    letter-spacing: -0.5px;
+}
+
+h3 {
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 60px */
+}
+
+h4 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 42px */
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+}
+
+h6 {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 25.5px */
+    letter-spacing: 0.15px;
+}
+
+p {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 19.5px */
+    letter-spacing: 0.15px;
+}
+
+.buttonTypography {
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 18px */
+    letter-spacing: 1.25px;
+}
+
+
+/*color*/
+.colorpurple {
+    color: #8A4BA4;
+}
+
+.colorBlack {
+    color: var(--p, #181818);
+}
+
+/*header*/
+header {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px solid var(--r1, #8A4BA4);
+    background: var(--c1, #F9F9F9);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.headerButtonLeft,
+.headerButtonRight {
+    margin: 0 60px;
+    /* Adicione margens para separar os botões do canto esquerdo e direito */
+}
+
+.headerButtonCenter {
+    display: flex;
+    justify-content: center;
+    /* Alinha os itens filhos ao centro */
+    flex-grow: 1;
+    /* Isso faz com que o centro ocupe o espaço disponível */
+}
+
+.headerButtonStyle {
+    margin-left: 40px;
+    color: var(--r1, #8A4BA4);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerButtonStyle:hover {
+    color: rgb(14, 13, 13);
+    transform: scale(1.05);
+}
+/*menu*/
+
+.menu-responsive {
+    display: none;
+    /* Inicialmente, o menu responsivo está oculto */
+}
+
+/* Estilos para o ícone do menu hambúrguer */
+.menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--r1, #8A4BA4);
+    display: none;
+}
+
+
+/*MAIN*/
+.main {
+    display: flex;
+    justify-content: center;
+
+    background: var(--fundo, rgba(245, 245, 245, 0.95));
+
+}
+
+.imgJVmainPrincipal {
+    width: 300px;
+    height: 297.778px;
+    margin-top: 73px;
+
+
+}
+
+.mainTxtPrincipal {
+
+    margin-top: 100px;
+    margin-left: 58px;
+
+}
+
+
+
+.mainSpanColor {
+    color: var(--r1, #8A4BA4);
+
+}
+
+.maintxtuxui {
+    text-align: end;
+    color: #8A4BA4;
+    margin-right: 53px;
+}
+
+
+.mainsubtxt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/*SECTION*/
+
+.sectionCliqueaqui {
+    margin-left: 28px;
+    margin-top: 26px;
+
+
+}
+
+.sectionStyleButton {
+    padding: 15px;
+
+    border-radius: 20px;
+    border-top: 2px solid var(--r1, #8A4BA4);
+    border-right: 5px solid var(--r1, #8A4BA4);
+    border-bottom: 3px solid var(--r1, #8A4BA4);
+    border-left: 3px solid var(--r1, #8A4BA4);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.sectionButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionStyleButton:hover {
+    transform: scale(1.05);
+    /* Adicione esta linha para aumentar o tamanho ao passar o mouse */
+}
+
+/*Hr*/
+
+.hrBorder {
+    border: 5px solid var(--r1, #8A4BA4);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*Article*/
+.styleArticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(202, 198, 198, 0.95);
+
+
+
+
+}
+
+.pcweb {
+    margin: 50px;
+    margin-left: 28;
+    width: 363.063px;
+    height: 300px;
+}
+
+.articleOqueeufaco {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.moblieimg {
+
+    margin-left: 10px;
+    width: 463.063px;
+    height: 400px;
+}
+
+.styleArticleEnd {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(202, 198, 198, 0.95);
+
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    columns: 2;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.socialIcons {
+    margin-bottom: 15px;
+}
+
+.socialIcon {
+
+    margin: 0px 01px;
+    display: inline-block;
+
+}
+
+.contactInfo {
+    text-align: left;
+}
+
+.socialIcons img {
+    width: 50px;
+}
+
+
+/*icone whatsapp*/
+.WhatsAppIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.WhatsAppIcon img {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Versão Moblie*/
+
+@media only screen and (max-width: 790px) {
+
+    /*menu */
+    .headerButtonLeft,
+    .headerButtonRight {
+        display: none;
+        /* Esconde os botões esquerdo e direito */
+    }
+
+    .headerButtonCenter {
+        display: none;
+        /* Esconde os botões do centro */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostra o ícone do menu hambúrguer */
+        margin-left: 20px;
+    }
+
+    .menu-responsive {
+        display: flex;
+        /* Mostra o menu responsivo como flexível (um embaixo do outro) */
+        flex-direction: column;
+        align-items: flex-start;
+        /* Alinha os itens ao início (lado esquerdo) */
+        position: absolute;
+        top: 50px;
+        /* Ajusta a posição do menu responsivo abaixo do cabeçalho */
+        left: 0;
+        /* Define para 0 para não ficar grudado na borda esquerda */
+        width: 100%;
+        margin-left: 30px;
+        /* Adiciona uma margem de 30px à esquerda */
+        background: var(--c1, #F9F9F9);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu-responsive a {
+        margin: 10px 0;
+        /* Adicione margens entre os itens do menu responsivo */
+    }
+
+
+    .menu-responsive {
+        display: none;
+    }
+
+    .menu-responsive.show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        margin-left: 30px;
+        background: var(--c1, #F9F9F9);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+    /*MAiN*/
+
+    .main {
+        display: block;
+        text-align: center;
+    }
+
+    .imgJVmainPrincipal {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .mainTxtPrincipal {
+
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+
+
+    }
+
+    /*SECTION buttom*/
+    .section {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    .sectionCliqueaqui {
+        margin: 0;
+        text-align: left;
+    }
+
+
+    .sectionButtons {
+        display: block;
+        columns: 1;
+
+
+    }
+
+    .sectionStyleButton {
+        display: block;
+
+    }
+
+    .styleArticle {
+        display: block;
+        columns: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    .img600moblie {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        display: block;
+        columns: 1;
+
+    }
+
+    .socialIcon {
+        margin: 10px;
+        right: 10px;
+        height: 10px;
+    }
+
+    .contactInfo {
+        margin: 20px;
+    }
+
+
+
+
+
+
+
+
+}

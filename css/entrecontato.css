@@ -1,0 +1,58 @@
+.articleentrecontato{
+    margin: 20px;
+    text-align: center;
+}
+
+.form{
+    
+}
+
+.buttonform{
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer;
+}
+
+
+
+/* Adicione este bloco ao seu arquivo CSS existente */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block; /* Faz com que os rótulos fiquem em linha */
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: calc(100% - 16px); /* Ocupa 100% da largura disponível, considerando o preenchimento */
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Ajuste do layout para fazer rótulos e campos ficarem lado a lado */
+label, input, textarea {
+    vertical-align: top;
+}
+
+.buttonform {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonform:hover {
+    background-color: #45a049;
+}

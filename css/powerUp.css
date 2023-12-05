@@ -1,0 +1,81 @@
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.column1, .column2 {
+    flex: 1;
+}
+
+.column1 {
+    margin-left: 60px;
+    text-align: left
+}
+
+.img450px{
+    width: 150px;
+}
+
+.pfontsize{
+    font-size: 14px;
+}
+
+
+.column2 img {
+    width: 450px;
+    height: auto; }
+
+
+
+    .imgDesk{
+       margin-top: 100px;
+    }
+
+    .imgBenchmarking{
+       margin-top: 150px;
+    }
+    
+    .imgpesquisa{
+        margin-top: 380px;
+    }
+
+
+    .articlePersona{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .solucaotxt{
+        margin: 60px;
+        text-align: left;
+    }
+
+    .WiraFrame{
+      text-align: center;
+      margin: 0 60px 60px 60px;
+    }
+
+   .imgFrameFinal{
+    margin-top: 20px;
+     margin-bottom: 30px;
+   }
+@media screen and (max-width: 600px) {
+    .column1, .column2 {
+        flex: 100%;
+    }
+
+    .column2 img{
+       width:  250px;
+    }
+
+    .WiraFrame img{
+        width: 200px;
+    }
+
+    
+}
