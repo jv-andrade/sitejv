@@ -10,7 +10,11 @@ body {
    margin: 0px;
    padding: 0px;
     background: var(--fundo, rgba(245, 245, 245, 0.95));
+
+    overflow-y: scroll;
 }
+
+
 
 button {
     /* Resetando todos os estilos padrão */
@@ -362,14 +366,38 @@ nav {
 }
 
 
+/*para subir atela botão*/
 
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 33px;
+    right: 9%;
+    transform: translateX(50%);
+    background-color: white;
+    color:#8A4BA4;
+    border: #8A4BA4 solid 3px;
+    
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+   
+    z-index: 999;
+  }
+  
+  #scrollToTopBtn.show {
+    display: block;
+  }
+  
+  #scrollToTopBtn::before {
+    content: "\25b2"; /* Código Unicode para um triângulo para cima */
+    font-size: 20px;
+  }
 
-
-
-
-
-
-
+  #scrollToTopBtn:hover {
+    transform: translateX(50%) scale(1.2);
+  }
+  
 
 
 
@@ -378,6 +406,47 @@ nav {
 /* Versão Moblie*/
 
 @media only screen and (max-width: 790px) {
+
+  /*botão para subir a tela */
+
+  
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: white;
+    color:#8A4BA4;
+    border: #8A4BA4 solid 3px;
+    
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+   
+    z-index: 999;
+  }
+  
+  #scrollToTopBtn.show {
+    display: block;
+  }
+  
+  #scrollToTopBtn::before {
+    content: "\25b2"; /* Código Unicode para um triângulo para cima */
+    font-size: 15px;
+  }
+
+  
+  
+
+
+
+
+
+
+
+
+
 
     /*menu */
     .headerButtonLeft,
@@ -447,10 +516,11 @@ nav {
     }
 
     .imgJVmainPrincipal {
+        
         width: 80%;
         max-width: 300px;
         height: auto;
-        margin-top: 20px;
+        margin-top: 60px;
         margin-bottom: 5px;
     }
 
@@ -521,7 +591,9 @@ nav {
     .contactInfo {
         margin: 20px;
     }
-
+    .styleArticleEndtxt{
+       margin: 30px;
+    }
 
 
 

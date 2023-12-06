@@ -54,3 +54,34 @@ document.getElementById("buttonContato").addEventListener("click",function(){
     window.location.href = "entrecontato.html"
 })
 
+
+
+
+//botão para subir para topo do site
+
+// Verifica a posição da página ao rolar
+window.onscroll = function() {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  
+    // Mostra ou oculta o botão com base na posição de rolagem
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  }
+  
+  // Rola suavemente para o topo quando o botão é clicado
+  document.getElementById("scrollToTopBtn").onclick = function() {
+    scrollToTop();
+  };
+  
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Para navegadores Safari
+    document.documentElement.scrollTop = 0; // Para outros navegadores
+  }
+  

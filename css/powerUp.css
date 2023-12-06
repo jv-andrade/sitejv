@@ -66,16 +66,35 @@
    }
 @media screen and (max-width: 600px) {
     .column1, .column2 {
+        text-align: left;
+      
         flex: 100%;
     }
+   
 
     .column2 img{
-       width:  250px;
+       width:  300px;
     }
 
     .WiraFrame img{
-        width: 200px;
+        width: 260px;
     }
-
+   .articlePersona img{
+   
+    width: 300px;
+   }
     
+   .imgBenchmarking {
+    margin-top: 20px;
+}
+
+.imgpesquisa {
+    margin-top: 20px;
+}
+
+.WiraFrame{
+    text-align: left;
+}
+
+
 }
